@@ -14,7 +14,7 @@ class Role extends Model
     /*
     * Method untuk yang mendefinisikan relasi antara model user dan model Role
     */
-    public function getUserObject()
+    public function user()
     {
         return $this->belongsToMany(User::class)->using(UserRole::class);
     }
